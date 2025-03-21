@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKShop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .product {
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            width: calc(33% - 40px);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .product:hover {
+            transform: translateY(-10px);
+        }
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .product h2 {
+            font-size: 22px;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        .product p {
+            font-size: 16px;
+            color: #777;
+            margin: 10px 0;
+        }
+        .price {
+            font-size: 20px;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .product button {
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .product button:hover {
+            background-color: #27ae60;
+        }
+        .reviews {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .review {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .review p {
+            font-size: 14px;
+            color: #555;
+        }
+        .review .username {
+            font-weight: bold;
+            color: #333;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>IKShop</h1>
+        <p>Купуйте якісні товари за доступними цінами!</p>
+    </header>
+
+    <div class="container">
+        <div class="product">
+            <img src="images/image1.jpg" alt="Powerbank">
+            <h2>Powerbank</h2>
+            <p>Потужність 10000 mAh, компактний дизайн</p>
+            <p class="price">₴499</p>
+            <button onclick="window.location.href='https://example.com/cart'">Купити</button>
+
+            <!-- Отзывы -->
+            <div class="reviews">
+                <h3>Відгуки:</h3>
+                <div class="review">
+                    <p class="username">Іван</p>
+                    <p>Чудовий powerbank! Заряджає дуже швидко і виглядає стильно.</p>
+                </div>
+                <div class="review">
+                    <p class="username">Олена</p>
+                    <p>Придбала для подорожей, дуже зручно, що він маленький і легкий!</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product">
+            <img src="images/image2.jpg" alt="Електроінструмент">
+            <h2>Електроінструмент</h2>
+            <p>Ідеальний для дому та саду</p>
+            <p class="price">₴777</p>
+            <button onclick="window.location.href='https://example.com/cart'">Купити</button>
+
+            <!-- Отзывы -->
+            <div class="reviews">
+                <h3>Відгуки:</h3>
+                <div class="review">
+                    <p class="username">Микола</p>
+                    <p>Цей інструмент справжній рятувальник для моїх садових робіт!</p>
+                </div>
+                <div class="review">
+                    <p class="username">Марина</p>
+                    <p>Легкий та зручний у використанні, дуже задоволена покупкою.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 IKShop</p>
+    </footer>
+</body>
+</html>
